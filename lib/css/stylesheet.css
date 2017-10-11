@@ -1,0 +1,409 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+  position: relative;
+}
+
+.banner-container {
+	background-image: url("https://images.pexels.com/photos/221449/pexels-photo-221449.jpeg?h=350&auto=compress&cs=tinysrgb");
+	background-size: cover;
+	background-repeat: repeat;
+}
+
+/*Footer---------------------------------------------------*/
+#footer img{
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+	margin-left: 650px;
+	margin-top: 200px;
+}
+
+#footer p{
+  width: 300px;
+  height: 100px;
+	margin-left: 620px;
+	font-family: 'Satisfy', cursive;
+	color: blue;
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+/*Header------------------------------------------------------------------------*/
+#header{
+  height: 65px;
+  width: 100%;
+  background-image: url("https://images.pexels.com/photos/221449/pexels-photo-221449.jpeg?h=350&auto=compress&cs=tinysrgb");
+	background-size: cover;
+	background-repeat: repeat;
+  font-family: 'Satisfy', cursive;
+	padding: 10px;
+}
+
+.title{
+  font-size: 110px;
+  font-family: 'Satisfy', cursive;
+  color: pink;
+  text-align: center;
+}
+.hometitle{
+	font-size: 80px;
+  font-family: 'Satisfy', cursive;
+  color: pink;
+  text-align: center;
+	margin-top: 40px;
+}
+.homeh2 {
+	font-size: 60px;
+	font-family: 'Satisfy', cursive;
+  color: rgba(255, 235, 51, 0.93);
+  text-align: center;
+	margin-top: 40px;
+}
+
+/*navigation bar---------------------------------------------------------------*/
+.navbar{
+  padding-left: 100px;
+  padding-top: 2px;
+  line-height: 50px;
+  font-size: 60px;
+}
+
+.navbar li{
+  text-decoration: none;
+  display: inline;
+  padding: 10px;
+	font-size: 20px;
+	color: pink;
+}
+
+.navbar a{
+	text-decoration: none;
+}
+
+.navbar li:hover{
+  background-color: rgba(255, 235, 51, 0.93);
+}
+/*Filter bar--------------------------------------------------------------------*/
+#sidebar{
+  width: 300px;
+  height: 500px;
+	background-image: url("https://images.pexels.com/photos/221449/pexels-photo-221449.jpeg?h=350&auto=compress&cs=tinysrgb");
+	background-size: cover;
+	background-repeat: repeat;
+  position: absolute;
+	top: 150%;
+  left: 25px;
+	display: inline-block;
+}
+
+#sidebar h1{
+	color: blue;
+	font-family: 'Satisfy', cursive;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+/* Bogo and Shipping Banner on detail page -----------------------------------------*/
+.bogo{
+	position: absolute;
+	top: 300px;
+	left: 20px;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 40px;
+	transform:skewY(170deg);
+	text-decoration: underline;
+	color: rgba(232, 179, 2, 0.63);
+}
+.shipping{
+	position: absolute;
+	top: 290px;
+	left: 1100px;
+	color: rgba(232, 179, 2, 0.63);
+	font-size: 40px;
+	font-family: 'Permanent Marker', cursive;
+	text-decoration: underline;
+}
+
+
+/*Detail page --------------------------------------------------------------------*/
+.detail-container{
+	text-align: center;
+	font-size: 40px;
+	width: 50%;
+	margin: 0 auto;
+	color: blue;
+	font-family: 'Satisfy', cursive;
+	margin-top: 80px;
+	border-style: double;
+	border-color: pink;
+  border-width: 15px;
+}
+
+
+.detail-container p{
+	font-size: 20px;
+	line-height: 50px;
+}
+.detail-container img{
+	border-radius: 20px;
+	margin-top: 10px;
+}
+
+/*Product page--------------------------------------------------------------------*/
+.products{
+  width: 20%;
+  padding: 25px;
+  left: 120px;
+  margin-top: 45px;
+  display: inline-block;
+	margin: 10px;
+	height: 80px;
+	border-bottom-style: double;
+	border-left-style: double;
+	border-color: pink;
+  border-bottom-width: 15px;
+	border-left-width: 15px;
+
+}
+#catorgory {
+	text-align: center;
+}
+.products-container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 100px;
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+  line-height: 25px;
+  color: blue;
+	display: inline-block;
+	margin-top: 60px;
+}
+
+.products a:link{
+		text-decoration: none;
+}
+
+.products img{
+  float: left;
+  width:  100px;
+  height: 100px;
+  background-position: 70% 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+}
+
+.products:hover{
+	transform: scale(1,1);
+	background: rgba(232, 179, 2, 0.63);
+}
+/*Search page---------------------------------------------------------------*/
+.searchbin{
+	margin-left: 30%;
+	font-family: 'Satisfy', cursive;
+	color: blue;
+	font-size: 30px;
+	margin-top: 5%;
+}
+
+.searchCat:hover{
+	background-color: rgba(232, 179, 2, 0.63);
+}
+
+
+.searchCat{
+	float: left;
+	margin: 25px;
+	text-align: center;
+	line-height: 50px;
+}
+
+figcaption{
+	text-align: center;
+}
+
+
+.searchCat img{
+	position: relative;
+	float: left;
+	width:  100px;
+	height: 100px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 20%;
+	padding: 30px;
+	margin: 50px;
+	border: 5px pink solid;
+}
+
+/*form----------------------------------------------------------------------*/
+
+#form{
+  margin: 0 auto;
+  width: 40%;
+  height: 400px;
+  margin-top: 80px;
+  line-height: 40px;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  color: blue;
+  font-size: 30px;
+}
+
+.form-container{
+	background-image: url("https://images.pexels.com/photos/221449/pexels-photo-221449.jpeg?h=350&auto=compress&cs=tinysrgb");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 80%;
+	margin: 0 auto;
+}
+h3{
+  line-height: 40px;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  color: blue;
+  font-size: 30px;
+  margin-top: 3%;
+  padding: 5px;
+}
+
+input{
+  margin: 10px;
+}
+/*Slideshow ---------------------------------------------------------------------*/
+.banner {
+  width: 35%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+	overflow: hidden;
+}
+
+.banner img{
+  width:  500px;
+  height: 500px;
+  background-position: 200px 200px;
+  margin-top: 100px;
+  padding: 40px;
+}
+
+/*Button-------------------------------------------------------------------*/
+button{
+  background-color: pink;
+  width: 80px;
+  height: 35px;
+  border-radius: 20px;
+}
+ .addedItem{
+	 width: 100px;
+	 height: 75px;
+	 margin: 0 auto;
+	 margin-top: 10px;
+	 border-radius: 30px;
+ }
+
+/*Contact page Header-----------------------------------------------------------------------------*/
+.contact-message{
+  font-family: 'Satisfy', cursive;
+  color: rgba(255, 235, 51, 0.93);
+  font-size: 60px;
+  text-align: center;
+  margin-top: 40px;
+
+}
+/*cart------------------------------------------------------------------------*/
+#cart{
+/*height: 10px;
+width: 15px;*/
+position: absolute;
+left: 1300px;
+top: 110px;
+width: 60px;
+height: 60px;
+
+}
+
+.cart-counter{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	left: 1350px;
+	top: 125px;
+	border-radius: 5px;
+	text-align: center;
+
+}
+
+.cartNumber {
+  color: blue;
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+/*Featured Items ---------------------------------------------------------------*/
+.featured img{
+	width:  100px;
+	height: 100px;
+	background-position: 70px 70px;
+	margin-top: 50px;
+	padding: 10px;
+	margin-left: 150px;
+	border-style: double;
+	border-color: pink;
+  border-width: 25px;
+}
+
+.featured-product{
+	display: inline-block;
+}
