@@ -23,7 +23,7 @@
   <div class="products-container">
   <?php
     try{
-      $db = new PDO('mysql:dbname=tmcgeehost=localhost;', 'r2hstudent', 'SbFaGzNgGIE8kfP');
+      $db = new PDO('mysql:dbname=tmcgee;host=localhost;', 'r2hstudent', 'SbFaGzNgGIE8kfP');;
       // connecting to the database
       $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       // Checking to see if there are errors
