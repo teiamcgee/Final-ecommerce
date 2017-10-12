@@ -16,7 +16,7 @@
      if(!empty($_POST)){
       try{
       // makes a connection to the database
-        $db = new PDO('mysql:host=localhost;dbname=tmcgee', 'r2hstudent', 'SbFaGzNgGIE8kfP');
+        $db = new PDO('mysql:dbname=tmcgeehost=localhost;', 'r2hstudent', 'SbFaGzNgGIE8kfP');
         // Check for errors
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         // insert into the table input
