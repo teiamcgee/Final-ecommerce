@@ -33,9 +33,6 @@
               <h1>{$product['product_name']}</h1>
               <p>{$product['product_description']}</p>
               <p>\$ {$product['product_price']}</p>
-              <div class='addedItem'>
-              <p>Added to cart</p>
-              </div>
         ";
     }
     ?>
