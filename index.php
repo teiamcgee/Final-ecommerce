@@ -38,7 +38,7 @@
       foreach($featuredProduct->fetchAll() as $product){
         // Grabbing the item from the table one at a time
 
-        // Displaying the product image, name
+        // Displaying the product image, name, and a connection to the product detail page
         echo "
         <div class='featured-product'>
         <figure><a href=\"product-detail.php?product_id={$product['product_id']}\"><img src=\"{$product['product_image']}\" alt=\"{$product['product_name']}\"></a>

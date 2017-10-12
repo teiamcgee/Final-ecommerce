@@ -155,12 +155,14 @@ body{
 .bogo{
 	position: absolute;
 	top: 300px;
-	left: 20px;
+	left: 240px;
 	font-family: 'Permanent Marker', cursive;
 	font-size: 40px;
-	transform:skewY(170deg);
+	transform:skewY(165deg);
 	text-decoration: underline;
-	color: rgba(232, 179, 2, 0.63);
+	border: 8px rgba(232, 179, 2, 0.63) dotted;
+	border-width: 13px;
+	color: red;
 }
 .shipping{
 	position: absolute;
@@ -170,6 +172,7 @@ body{
 	font-size: 40px;
 	font-family: 'Permanent Marker', cursive;
 	text-decoration: underline;
+	color: red;
 }
 
 
@@ -406,4 +409,14 @@ height: 60px;
 
 .featured-product{
 	display: inline-block;
+}
+
+/*Media Queries-------------------------------------------------------------------*/
+@media only screen and (min-width: 800px) {
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+
+
 }

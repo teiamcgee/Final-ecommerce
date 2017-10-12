@@ -13,9 +13,17 @@ include "inc/connectdb.php";
   <div id="sidebar">
       <h1>Find Your Fabulous!</h1>
 
-      <form method="GET" action="search.php" name="search-form">
+      <form method="GET" action="search.php" name="search-form" id="search-form">
         <!--Search input  -->
-          <input type="text" placeholder="Search" name="searchBar"><input type="submit" value="Submit">
+          <input type="text" placeholder="Search" name="searchBar">
+          <select name="price-filter" id="price_fiter">
+            <option>Name your Price</option>
+            <option value="00-15">0 - 15</option>
+            <option value="20-30">20 - 30</option>
+            <option value="30-40">30 - 40</option>
+            <option value="40-50">40 - 50</option>
+          </select>
+          <input type="submit" value="Submit">
       </form>
   </div>
 </section>
@@ -24,15 +32,21 @@ include "inc/connectdb.php";
       <?php
       try{
         // If the GET variable is set with a search term
-        if(isset($_GET['searchBar'])) {
+        if(isset($_GET['searchBar'])&& isset($_GET['price-filter'])) {
           // Strip tags strips any tags the could be injected into the table
             $chosenCatorgory= strip_tags($_GET['searchBar']);
             // Grabs the searchterm
-            $items = "SELECT * FROM Products WHERE product_name LIKE :name OR product_description LIKE :description OR product_price LIKE :price";
+            $items = "SELECT * FROM Products WHERE (product_name LIKE :name OR product_description LIKE :description OR product_price LIKE :price) AND product_price <= :maxproduct_price AND product_price >= :minproduct_price ORDER BY product_price";
             // checks to see if the search term matchs the name, description, and price inputs of the Products tabel
+            $splitIndex = strpos($_GET['price-filter'], "-");
+            $max = substr($_GET['price-filter'], $splitIndex + 1, 2);
+            $min = substr($_GET['price-filter'], 0, 2);
+
             $chosenItems = $db->prepare($items);
             // Prepares the query to be used
             $chosenItems->bindValue(':name', "%$chosenCatorgory%");
+            $chosenItems->bindValue(':maxproduct_price', $max);
+            $chosenItems->bindValue(':minproduct_price', $min);
             // %wildcard% - if it starts with or ends with item catorgory in the product table
             // binding the value of the search term and the item name
             $chosenItems->bindValue(':price', "%$chosenCatorgory%");
