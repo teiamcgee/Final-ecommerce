@@ -7,6 +7,7 @@
 ?>
 </head>
   <body>
+  <section>
   <?php include "inc/navigation.php" ?>
   <form method="GET" action="products.php" id="catorgory">
     <!--Select for the filter  -->
@@ -47,7 +48,7 @@
         echo "
         <figure class='products'><a href=\"product-detail.php?product_id={$product['product_id']}\"><img src=\"{$product['product_image']}\" alt=\"{$product['product_name']}\"></a>
         <figcaption><a href=\"product-detail.php?product_id={$product['product_id']}\"><p>{$product['product_name']}</p>
-        <p>{$product['product_price']}</p></a></figcaption>
+        <p>\$ {$product['product_price']}</p></a></figcaption>
           </figure>
         ";
       }

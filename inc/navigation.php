@@ -12,7 +12,8 @@
       <img src="lib/img/cart.png" alt="Cart" id="cart">
   </nav>
   <div class="cart-counter">
-    <p class="cartNumber"></p>
+    <!--Showing the items in the cart  -->
+    <p class="cartNumber"><?php echo $_SESSION['cart'] ?></p>
   </div>
 </div>
 </section>

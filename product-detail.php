@@ -1,4 +1,7 @@
 <?php
+  session_start();
+  $_SESSION['cart'] = $_SESSION['cart'] + $_GET['quantity'];
+
  include "inc/connectdb.php";
 ?>
 <!DOCTYPE HTML>
@@ -30,28 +33,30 @@
           </div>
               <h1>{$product['product_name']}</h1>
               <p>{$product['product_description']}</p>
-              <p>{$product['product_price']}</p>
-              <button id='addbtn'>Buy</button>
-              <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-              </select>
+              <p>\$ {$product['product_price']}</p>
               <div class='addedItem'>
               <p>Added to cart</p>
               </div>
         ";
     }
     ?>
-  </div>
+              <form method="GET" action="product-detail.php" name="quantity-form">
+              <input type="hidden" name="product_id" value="<?php echo $_GET['product_id']; ?>" />
+              <select name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <input type="submit" value="Submit">
+              </form>
+            </div>
   <div class="bogo">
     <!--BOGO sign  -->
     <h2>BOGO 50% OFF</h2>

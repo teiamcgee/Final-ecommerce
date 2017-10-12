@@ -412,11 +412,440 @@ height: 60px;
 }
 
 /*Media Queries-------------------------------------------------------------------*/
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 400px) and (max-width: 560px){
+	#sidebar{
+	  width: 150px;
+	  height: 250px;
+		background-image: url("https://images.pexels.com/photos/221449/pexels-photo-221449.jpeg?h=350&auto=compress&cs=tinysrgb");
+		background-size: cover;
+		background-repeat: repeat;
+	  position: absolute;
+		top: 150%;
+	  left: 25px;
+		display: inline-block;
+	}
+
+	#sidebar h1{
+		color: blue;
+		font-family: 'Satisfy', cursive;
+		font-size: 30px;
+		margin-top: 20px;
+		margin-left: 10px;
+	}
+	.searchbin{
+		margin-left: 50%;
+		font-family: 'Satisfy', cursive;
+		color: blue;
+		font-size: 20px;
+		margin-top: 5%;
+		padding: 50px;
+	}
+
+  .searchCat{
+		float: left;
+		margin: 25px;
+		text-align: center;
+		line-height: 20px;
+		padding: 200px;
+		margin: 20px;
+	}
+
+	.searchCat img{
+		position: relative;
+		float: left;
+		width:  100px;
+		height: 100px;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 20%;
+		padding: 30px;
+		margin: 50px;
+		border: 5px pink solid;
+	}
+
+
+
+	.navbar li{
+		text-decoration: none;
+	  display: inline-block;
+	  padding: 1px;
+		font-size: 20px;
+		color: pink;
+	}
+
+	.form-container{
+		background-image: url("https://images.pexels.com/photos/221449/pexels-photo-221449.jpeg?h=350&auto=compress&cs=tinysrgb");
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 80%;
+		margin: 0 auto;
+		height: 100%;
+	}
+
+	#form textarea{
+		width: 180px;
+		height: 30px;
+	}
+
+
+.banner {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+	overflow: hidden;
+}
+.products-container{
+  position: relative;
+  height: 100%;
+  width: 50%;
+  left: 100px;
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+  line-height: 25px;
+  color: blue;
+	display: inline-block;
+	margin-top: 60px;
+}
+
+.products{
+  width: 20%;
+  padding: 75px;
+  left: 120px;
+  margin-top: 25px;
+  display: inline-block;
+	margin: 15px;
+	height: 80px;
+	border-bottom-style: double;
+	border-left-style: double;
+	border-color: pink;
+  border-bottom-width: 15px;
+	border-left-width: 15px;
+	font-size: 15px;
+}
+.products img, p{
+  float: left;
+  width:  100px;
+  height: 100px;
+  background-position: 70% 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+}
+.detail-container{
+		text-align: center;
+		font-size: 40px;
+		width: 80%;
+		height: 100%;
+		padding-bottom: 650px;
+		margin: 0 auto;
+		color: blue;
+		font-family: 'Satisfy', cursive;
+		margin-top: 80px;
+		border-style: double;
+		border-color: pink;
+	  border-width: 15px;
+	}
+
+
+	.detail-container p{
+		font-size: 20px;
+		line-height: 40px;
+	}
+	.detail-container img{
+		border-radius: 20px;
+		margin-top: 10px;
+	}
+	.bogo{
+		position: absolute;
+		top: 300px;
+		left: 30px;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 10px;
+		transform:skewY(165deg);
+		text-decoration: underline;
+		border: 8px rgba(232, 179, 2, 0.63) dotted;
+		border-width: 13px;
+		color: red;
+	}
+	.shipping{
+		position: absolute;
+		top: 290px;
+		left: 300px;
+		color: rgba(232, 179, 2, 0.63);
+		font-size: 10px;
+		font-family: 'Permanent Marker', cursive;
+		text-decoration: underline;
+		color: red;
+	}
+
 
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1000px) {
+@media only screen and (min-width: 560px) and (max-width: 700px) {
+	.searchbin{
+		margin-left: 30%;
+		font-family: 'Satisfy', cursive;
+		color: blue;
+		font-size: 20px;
+		margin-top: 5%;
+		padding: 50px;
+	}
+	.searchCat{
+		float: left;
+		margin: 25px;
+		text-align: center;
+		line-height: 20px;
+		padding: 100px;
+		margin: 20px;
+	}
 
+	.detail-container{
+		text-align: center;
+		font-size: 40px;
+		width: 80%;
+		margin: 0 auto;
+		color: blue;
+		font-family: 'Satisfy', cursive;
+		margin-top: 80px;
+		border-style: double;
+		border-color: pink;
+	  border-width: 15px;
+	}
+
+
+	.detail-container p{
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.detail-container img{
+		border-radius: 20px;
+		margin-top: 10px;
+	}
+	.bogo{
+		position: absolute;
+		top: 300px;
+		left: 60px;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 30px;
+		transform:skewY(165deg);
+		text-decoration: underline;
+		border: 8px rgba(232, 179, 2, 0.63) dotted;
+		border-width: 13px;
+		color: red;
+	}
+	.shipping{
+		position: absolute;
+		top: 290px;
+		left: 400px;
+		color: rgba(232, 179, 2, 0.63);
+		font-size: 30px;
+		font-family: 'Permanent Marker', cursive;
+		text-decoration: underline;
+		color: red;
+	}
+
+
+
+	#form{
+		margin: 0 auto;
+		width: 40%;
+		height: 400px;
+		margin-top: 80px;
+		line-height: 40px;
+		text-align: center;
+		font-family: 'Satisfy', cursive;
+		color: blue;
+		font-size: 30px;
+	}
+
+		#form textarea{
+			width: 180px;
+			height: 30px;
+		}
+
+		.banner {
+		  width: 45%;
+		  margin: 0 auto;
+		  margin-bottom: 100px;
+			overflow: hidden;
+		}
+		.products{
+		  width: 20%;
+		  padding: 95px;
+		  left: 120px;
+		  margin-top: 25px;
+		  display: inline-block;
+			margin: 15px;
+			height: 80px;
+			border-bottom-style: double;
+			border-left-style: double;
+			border-color: pink;
+		  border-bottom-width: 15px;
+			border-left-width: 15px;
+			font-size: 15px;
+		}
+		.products img{
+		  float: left;
+		  width:  100px;
+		  height: 100px;
+		  background-position: 70% 70%;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  border-radius: 20%;
+			padding: 12px;
+		}
+
+	}
+
+@media only screen and (min-width: 700px) and (max-width: 850px) {
+	.products{
+		width: 20%;
+		left: 120px;
+		padding: 90px;
+		margin-top: 25px;
+		display: inline-block;
+		margin: 15px;
+		height: 80px;
+		border-bottom-style: double;
+		border-left-style: double;
+		border-color: pink;
+		border-bottom-width: 15px;
+		border-left-width: 15px;
+		font-size: 15px;
+	}
+	.products img{
+		float: left;
+		width:  100px;
+		height: 100px;
+		background-position: 70% 70%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 20%;
+	}
+	.shipping{
+		position: absolute;
+		top: 290px;
+		left: 300px;
+		color: rgba(232, 179, 2, 0.63);
+		font-size: 30px;
+		font-family: 'Permanent Marker', cursive;
+		text-decoration: underline;
+		color: red;
+	}
+	.bogo{
+		position: absolute;
+		top: 300px;
+		left: 150px;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 30px;
+		transform:skewY(165deg);
+		text-decoration: underline;
+		border: 8px rgba(232, 179, 2, 0.63) dotted;
+		border-width: 13px;
+		color: red;
+	}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1600px) {
+	.searchbin{
+		margin-left: 40%;
+		font-family: 'Satisfy', cursive;
+		color: blue;
+		font-size: 20px;
+		margin-top: 5%;
+		padding: 20px;
+	}
+
+	.searchCat{
+		float: left;
+		margin: 25px;
+		text-align: center;
+		line-height: 40px;
+		padding: 50px;
+		margin: 20px;
+	}
+
+
+	.detail-container{
+		text-align: center;
+		font-size: 40px;
+		width: 40%;
+		margin: 0 auto;
+		color: blue;
+		font-family: 'Satisfy', cursive;
+		margin-top: 80px;
+		border-style: double;
+		border-color: pink;
+		border-width: 15px;
+	}
+
+
+	.detail-container p{
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.detail-container img{
+		border-radius: 20px;
+		margin-top: 10px;
+	}
+	.bogo{
+		position: absolute;
+		top: 300px;
+		left: 250px;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 30px;
+		transform:skewY(165deg);
+		text-decoration: underline;
+		border: 8px rgba(232, 179, 2, 0.63) dotted;
+		border-width: 13px;
+		color: red;
+	}
+	.shipping{
+		position: absolute;
+		top: 290px;
+		left: 1100px;
+		color: rgba(232, 179, 2, 0.63);
+		font-size: 30px;
+		font-family: 'Permanent Marker', cursive;
+		text-decoration: underline;
+		color: red;
+	}
+
+	#form textarea{
+		width: 180px;
+		height: 100px;
+	}
+
+
+	.banner {
+	  width: 35%;
+	  margin: 0 auto;
+	  margin-bottom: 100px;
+		overflow: hidden;
+	}
+	.products{
+		width: 20%;
+		left: 120px;
+		margin-top: 25px;
+		display: inline-block;
+		margin: 15px;
+		height: 80px;
+		border-bottom-style: double;
+		border-left-style: double;
+		border-color: pink;
+		border-bottom-width: 15px;
+		border-left-width: 15px;
+		font-size: 25px;
+	}
+	.products img{
+		float: left;
+		width:  100px;
+		height: 100px;
+		background-position: 70% 70%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 20%;
+	}
 
 }

@@ -18,10 +18,10 @@ include "inc/connectdb.php";
           <input type="text" placeholder="Search" name="searchBar">
           <select name="price-filter" id="price_fiter">
             <option>Name your Price</option>
-            <option value="00-15">0 - 15</option>
-            <option value="20-30">20 - 30</option>
-            <option value="30-40">30 - 40</option>
-            <option value="40-50">40 - 50</option>
+            <option value="00-15">$0 - $15</option>
+            <option value="20-30">$20 - $0</option>
+            <option value="30-40">$30 - $40</option>
+            <option value="40-50">$0 - $50</option>
           </select>
           <input type="submit" value="Submit">
       </form>
@@ -37,14 +37,17 @@ include "inc/connectdb.php";
             $chosenCatorgory= strip_tags($_GET['searchBar']);
             // Grabs the searchterm
             $items = "SELECT * FROM Products WHERE (product_name LIKE :name OR product_description LIKE :description OR product_price LIKE :price) AND product_price <= :maxproduct_price AND product_price >= :minproduct_price ORDER BY product_price";
-            // checks to see if the search term matchs the name, description, and price inputs of the Products tabel
+            // checks to see if the search term matchs the name, description, and price inputs of the Products tabel and if the price has been selected
             $splitIndex = strpos($_GET['price-filter'], "-");
+            // seperating the numbers before and after the dash
             $max = substr($_GET['price-filter'], $splitIndex + 1, 2);
+            // grabbing the two numbers after the dash
             $min = substr($_GET['price-filter'], 0, 2);
-
+            // getting two numbers before the dash
             $chosenItems = $db->prepare($items);
             // Prepares the query to be used
             $chosenItems->bindValue(':name', "%$chosenCatorgory%");
+            //binding the value of the price selector to the min or max variable
             $chosenItems->bindValue(':maxproduct_price', $max);
             $chosenItems->bindValue(':minproduct_price', $min);
             // %wildcard% - if it starts with or ends with item catorgory in the product table
