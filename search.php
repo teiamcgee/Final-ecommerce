@@ -19,7 +19,7 @@ include "inc/connectdb.php";
           <select name="price-filter" id="price_fiter">
             <option>Name your Price</option>
             <option value="00-15">$0 - $15</option>
-            <option value="20-30">$20 - $0</option>
+            <option value="20-30">$20 - $30</option>
             <option value="30-40">$30 - $40</option>
             <option value="40-50">$0 - $50</option>
           </select>
