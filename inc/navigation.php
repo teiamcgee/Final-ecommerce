@@ -1,4 +1,3 @@
-  <?php session_start(); ?>
 <section>
   <h1 class="title">Delphi</h1>
   <div id="header">
