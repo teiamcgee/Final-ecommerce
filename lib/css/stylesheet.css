@@ -802,26 +802,6 @@ height: 60px;
 		border-width: 13px;
 		color: red;
 	}
-
-	#cart{
-	position: absolute;
-	left: 600px;
-	top: 110px;
-	width: 60px;
-	height: 60px;
-
-	}
-
-	.cart-counter{
-		position: absolute;
-		width: 40px;
-		height: 40px;
-		background-color: white;
-		left: 655px;
-		top: 125px;
-		border-radius: 5px;
-		text-align: center;
-	}
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1600px) {
@@ -832,7 +812,6 @@ height: 60px;
 	top: 110px;
 	width: 60px;
 	height: 60px;
-
 	}
 
 	.cart-counter{
