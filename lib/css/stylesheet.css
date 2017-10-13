@@ -820,7 +820,7 @@ height: 60px;
 		height: 40px;
 		background-color: white;
 		left: 500px;
-		top: 120px;
+		top: 130px;
 		border-radius: 5px;
 		text-align: center;
 	}
@@ -924,5 +924,17 @@ height: 60px;
 		background-size: cover;
 		border-radius: 20%;
 	}
+
+		#sidebar{
+		  width: 150px;
+		  height: 250px;
+			background-image: url("https://images.pexels.com/photos/221449/pexels-photo-221449.jpeg?h=350&auto=compress&cs=tinysrgb");
+			background-size: cover;
+			background-repeat: repeat;
+		  position: absolute;
+			top: 110%;
+		  left: 25px;
+			display: inline-block;
+		}
 
 }
