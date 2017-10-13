@@ -824,6 +824,29 @@ height: 60px;
 	}
 }
 
+	@media only screen and (min-width: 800px) and (max-width: 1000px){
+	#cart{
+	position: absolute;
+	left: 700px;
+	top: 110px;
+	width: 60px;
+	height: 60px;
+
+	}
+
+	.cart-counter{
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background-color: white;
+		left: 755px;
+		top: 125px;
+		border-radius: 5px;
+		text-align: center;
+	}
+}
+
+
 @media only screen and (min-width: 700px) and (max-width: 1600px) {
 
 	#cart{
