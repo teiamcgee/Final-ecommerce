@@ -703,7 +703,9 @@ height: 60px;
 		color: red;
 	}
 
-
+.form-container{
+	padding-bottom: 500px;
+}
 
 	#form{
 		margin: 0 auto;
@@ -806,6 +808,12 @@ height: 60px;
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1600px) {
+
+
+	.form-container{
+		padding-bottom: 800px;
+	}
+
 
 	#cart{
 	position: absolute;
