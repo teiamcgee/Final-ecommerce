@@ -63,7 +63,7 @@ include "inc/connectdb.php";
                 echo "
                 <div class='searchCat'>
                 <figure>
-                <figure class='products'><a href=\"product-detail.php?product_id={$product['product_id']}\"><img src=\"{$product['product_image']}\" alt=\"{$product['product_name']}\">
+                <figure><a href=\"product-detail.php?product_id={$product['product_id']}\"><img src=\"{$product['product_image']}\" alt=\"{$product['product_name']}\">
                 <figcaption>{$item['product_name']}</figcaption>
                 </figure>
                 <p>{$item['product_price']}</p>
