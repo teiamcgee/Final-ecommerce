@@ -36,7 +36,7 @@
         ";
     }
     ?>
-              <form method="GET" action="product-detail.php" name="quantity-form" onSubmit=itemAdded()>
+              <form method="GET" action="product-detail.php" name="quantity-form" onsubmit="itemAdded()">
               <input type="hidden" name="product_id" value="<?php echo $_GET['product_id']; ?>" />
               <select name="quantity">
                 <option>0</option>
