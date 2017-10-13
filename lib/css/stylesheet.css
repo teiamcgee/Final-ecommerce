@@ -420,7 +420,7 @@ height: 60px;
 		background-size: cover;
 		background-repeat: repeat;
 	  position: absolute;
-		top: 150%;
+		top: 100%;
 	  left: 25px;
 		display: inline-block;
 	}
@@ -433,7 +433,7 @@ height: 60px;
 		margin-left: 10px;
 	}
 	.searchbin{
-		margin-left: 50%;
+		margin-left: 20%;
 		font-family: 'Satisfy', cursive;
 		color: blue;
 		font-size: 20px;
