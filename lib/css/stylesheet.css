@@ -427,7 +427,7 @@ height: 60px;
 		width: 40px;
 		height: 40px;
 		background-color: white;
-		left: 390px;
+		left: 350px;
 		top: 125px;
 		border-radius: 5px;
 		text-align: center;
@@ -493,7 +493,7 @@ height: 60px;
 	  padding: 1px;
 		font-size: 20px;
 		color: pink;
-		margin-left: 10px;
+		margin-left: 5px;
 	}
 
 	.form-container{
