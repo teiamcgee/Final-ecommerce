@@ -415,7 +415,7 @@ height: 60px;
 @media only screen and (min-width: 400px) and (max-width: 560px){
 	#cart{
 	position: absolute;
-	left: 80px;
+	left: 50px;
 	top: 110px;
 	width: 60px;
 	height: 60px;
@@ -427,7 +427,7 @@ height: 60px;
 		width: 40px;
 		height: 40px;
 		background-color: white;
-		left: 85px;
+		left: 55px;
 		top: 125px;
 		border-radius: 5px;
 		text-align: center;
