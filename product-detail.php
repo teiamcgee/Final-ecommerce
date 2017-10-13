@@ -38,7 +38,7 @@
     ?>
               <form method="GET" action="product-detail.php" name="quantity-form">
               <input type="hidden" name="product_id" value="<?php echo $_GET['product_id']; ?>" />
-              <select name="quantity">
+              <select name="quantity" for="quantity">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
