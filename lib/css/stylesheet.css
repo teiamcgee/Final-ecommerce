@@ -69,7 +69,7 @@ body{
 #footer p{
   width: 800px;
   height: 100px;
-	margin-left: 480px;
+	margin-left: 80px;
 	font-family: 'Satisfy', cursive;
 	color: blue;
 	margin-top: 30px;
@@ -809,7 +809,7 @@ height: 60px;
 	#cart{
 	position: absolute;
 	left: 450px;
-	top: 130px;
+	top: 120px;
 	width: 60px;
 	height: 60px;
 	}
@@ -820,7 +820,7 @@ height: 60px;
 		height: 40px;
 		background-color: white;
 		left: 500px;
-		top: 140px;
+		top: 130px;
 		border-radius: 5px;
 		text-align: center;
 	}
