@@ -618,6 +618,31 @@ height: 60px;
 }
 
 @media only screen and (min-width: 560px) and (max-width: 700px) {
+
+	#cart{
+	position: absolute;
+	left: 300px;
+	top: 110px;
+	width: 60px;
+	height: 60px;
+
+	}
+
+	.cart-counter{
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background-color: white;
+		left: 355px;
+		top: 125px;
+		border-radius: 5px;
+		text-align: center;
+	}
+
+
+
+
+
 	.searchbin{
 		margin-left: 30%;
 		font-family: 'Satisfy', cursive;
