@@ -809,7 +809,7 @@ height: 60px;
 	#cart{
 	position: absolute;
 	left: 450px;
-	top: 120px;
+	top: 130px;
 	width: 60px;
 	height: 60px;
 	}
@@ -820,7 +820,7 @@ height: 60px;
 		height: 40px;
 		background-color: white;
 		left: 500px;
-		top: 130px;
+		top: 140px;
 		border-radius: 5px;
 		text-align: center;
 	}
