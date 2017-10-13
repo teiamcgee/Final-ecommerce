@@ -413,6 +413,14 @@ height: 60px;
 
 /*Media Queries-------------------------------------------------------------------*/
 @media only screen and (min-width: 400px) and (max-width: 560px){
+	.cartNumber {
+	  color: blue;
+		font-size: 40px;
+		margin-top: 10px;
+		left: 55px;
+	}
+
+
 	#cart{
 	position: absolute;
 	left: 0px;
