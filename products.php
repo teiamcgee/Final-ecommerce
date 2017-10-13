@@ -59,8 +59,8 @@
       }
 
    ?>
+   </div>
   </section>
-</div>
   <?php
   // Include to footer page
    include "footer.php";
