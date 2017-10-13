@@ -1,3 +1,6 @@
+<?php
+include "inc/connectdb.php";
+?>
 <!DOCTYPE HTML>
 <html>
 <head>

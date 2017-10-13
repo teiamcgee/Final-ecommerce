@@ -13,7 +13,7 @@
   </nav>
   <div class="cart-counter">
     <!--Showing the items in the cart  -->
-    <p class="cartNumber"><?php echo $_SESSION['cart'] ?></p>
+    <p class="cartNumber"><?php echo $_SESSION['cart']; ?></p>
   </div>
 </div>
 </section>

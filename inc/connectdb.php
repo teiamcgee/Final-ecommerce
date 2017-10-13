@@ -10,4 +10,6 @@
       echo $e->getMessage();
       exit;
     }
+
+    session_start();
 ?>
