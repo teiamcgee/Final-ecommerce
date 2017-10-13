@@ -429,7 +429,7 @@ height: 60px;
 		color: blue;
 		font-family: 'Satisfy', cursive;
 		font-size: 30px;
-		margin-top: 20px;
+		margin-top: 10px;
 		margin-left: 10px;
 	}
 	.searchbin{
@@ -488,6 +488,18 @@ height: 60px;
 		height: 30px;
 	}
 
+	#form{
+	  margin: 0 auto;
+	  width: 40%;
+	  height: 400px;
+	  margin-top: 80px;
+	  line-height: 20px;
+	  text-align: center;
+	  font-family: 'Satisfy', cursive;
+	  color: blue;
+	  font-size: 30px;
+		padding: 50px;
+	}
 
 .banner {
   width: 95%;
