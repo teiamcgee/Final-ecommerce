@@ -34,7 +34,7 @@ include "inc/connectdb.php";
         // binding the last name table input to the users input
         $givenInfo->bindParam(':email',strip_tags($_POST['email']));
         // binding the email table input to the users input
-        $givenInfo->bindParam(':company', strip_tags($_POST['company']));
+        $givenInfo->bindParam(':company',strip_tags($_POST['company']));
         // binding the company table input to the users input
         $givenInfo->bindParam(':comments',strip_tags($_POST['comments']));
         // binding the comments table input to the users input
