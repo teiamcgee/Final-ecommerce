@@ -1,6 +1,7 @@
 <?php
 include "inc/connectdb.php";
 $_SESSION['cart'] = $_SESSION['cart'] + $_GET['quantity'];
+var_dump($_SESSION);
 ?>
 <!DOCTYPE HTML>
 <html>
